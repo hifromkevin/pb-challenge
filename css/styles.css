@@ -1,0 +1,28 @@
+.box {
+  display: inline-block;
+  float: left; }
+  .box__thumb {
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
+  .box__title {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    text-align: center;
+    height: 50px; }
+  .box__price {
+    display: block;
+    text-align: center; }
+
+@media (min-width: 1001px) {
+  .box {
+    width: 32%; } }
+
+@media (max-width: 1000px) {
+  .box {
+    width: 48%; } }
+
+@media (max-width: 650px) {
+  .box {
+    width: 98%; } }
