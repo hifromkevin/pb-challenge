@@ -1,0 +1,27 @@
+{
+  "name": "pb-challenge",
+  "version": "1.0.0",
+  "description": "Render products to a screen from a JSON file. Click on those products to save them, and view saved items on a separate page. Click on saved items to remove.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server & gulp sass:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifromkevin/pb-challenge.git"
+  },
+  "author": "Kevin L.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hifromkevin/pb-challenge/issues"
+  },
+  "homepage": "https://github.com/hifromkevin/pb-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
