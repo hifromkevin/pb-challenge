@@ -42,7 +42,6 @@ fetch('./products.json')
 				let currentlySavedItems = currentlySaved.forEach(saved => savedHolder.push(saved.id));
  
 				localProducts.forEach(product => {
-					console.log('hi', !savedHolder.includes(boxId))
 					if (product.id === boxId && !savedHolder.includes(boxId)) {					
 						let saved = localStorage.saved ? currentlySaved : [];
 						saved.push(product);
@@ -50,7 +49,7 @@ fetch('./products.json')
 						localStorage.setItem('saved', saved);
 					}
 				});
-				console.log(JSON.parse(localStorage.saved));
+				// Time permitting, add pop up when clicked letting user know their item was saved
 			});
 		}
 	})
