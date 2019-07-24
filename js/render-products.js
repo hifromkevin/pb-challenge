@@ -27,3 +27,31 @@ fetch('./products.json')
 			});
 			if (list.length) document.getElementById('productGrid').innerHTML = list;
 		})
+	.then(() => {
+		boxes = Array.from(document.getElementsByClassName('box'));
+
+		for (var i = 0; i < boxes.length; i++) {
+			let boxId = boxes[i].id;
+			let savedHolder = [];
+
+			boxes[i].addEventListener('click', (e) => {
+				e.preventDefault();
+				let localProducts = JSON.parse(localStorage.products).groups;
+				let currentlySaved = localStorage.saved ?  JSON.parse(localStorage.saved) : [];
+
+				let currentlySavedItems = currentlySaved.forEach(saved => savedHolder.push(saved.id));
+ 
+				localProducts.forEach(product => {
+					console.log('hi', !savedHolder.includes(boxId))
+					if (product.id === boxId && !savedHolder.includes(boxId)) {					
+						let saved = localStorage.saved ? currentlySaved : [];
+						saved.push(product);
+						saved = JSON.stringify(saved);
+						localStorage.setItem('saved', saved);
+					}
+				});
+				console.log(JSON.parse(localStorage.saved));
+			});
+		}
+	})
+	.catch(err => console.log(`Well that ain\'t right... ${err}`));
