@@ -11,6 +11,10 @@
 ## Requirements:
  - Node (Tested using Node v11.13.0, but any modern version should work)
 
+## Decision:
+I coded this application in vanilla Javascript. My reasoning is to fulfill the requirement "As much as possible, stick to vanilla JavaScript for DOM manipulation". My default method would have been to utilize React, in that I could use the built-in onClick method, as well as re-render my application when state is updated. 
+
+
 ## To Begin: 
  - Locate the root folder with your terminal
  - Enter 'npm install' for dependencies
