@@ -28,8 +28,8 @@ I coded this application in vanilla Javascript. My reasoning is to fulfill the r
 ## Future Developments:
 Due to time constraints, I wanted to produce an MVP that performed the basic functionality. 
 With more time, I would:
-	- Create a modal with information about the item that is being saved, or letting the user know that the item has already been favorited
-	- Along similar lines, perhaps create some sort of icon (like a star) to let users know they have selected an item. This might also allow the user to add/remove saved items from the main display page
-	- Rather than hard-coding 'localStorage', create a variable that the user can select with buttons for "Local Storage" or "Session Storage"
-	- Better styling with more exact media queries
-        - I would better optimize my code, such as implementing a cache to limit the amount of looping being performed. 
+ - Create a modal with information about the item that is being saved, or letting the user know that the item has already been favorited 
+ - Along similar lines, perhaps create some sort of icon (like a star) to let users know they have selected an item. This might also allow the user to add/remove saved items from the main display page
+ - Rather than hard-coding 'localStorage', create a variable that the user can select with buttons for "Local Storage" or "Session Storage"
+ - Better styling with more exact media queries
+ - I would better optimize my code, such as implementing a cache to limit the amount of looping being performed. 
