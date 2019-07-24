@@ -17,7 +17,14 @@
  - Enter 'npm start' to render application to http://localhost:3005/ (inspired by the Childish Gambino song '3005')
 
 ## Using the App:
- - Click on the desired product(s)
+ - Click on the desired product(s) to save
  - Go to http://localhost:3005/saved.html to view the list of selected product(s)
  - Click on a saved product to remove it from the list of saved products
 
+## Future Developments:
+Due to time constraints, I wanted to produce an MVP that performed the basic functionality. 
+With more time, I would:
+	- Create a modal with information about the item that is being saved, or letting the user know that the item has already been favorited
+	- Along similar lines, perhaps create some sort of icon (like a star) to let users know they have selected an item. This might also allow the user to add/remove saved items from the main display page
+	- Rather than hard-coding 'localStorage', create a variable that the user can select with buttons for "Local Storage" or "Session Storage"
+	- Better styling with more exact media queries
