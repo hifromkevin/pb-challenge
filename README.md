@@ -32,3 +32,4 @@ With more time, I would:
 	- Along similar lines, perhaps create some sort of icon (like a star) to let users know they have selected an item. This might also allow the user to add/remove saved items from the main display page
 	- Rather than hard-coding 'localStorage', create a variable that the user can select with buttons for "Local Storage" or "Session Storage"
 	- Better styling with more exact media queries
+        - I would better optimize my code, such as implementing a cache to limit the amount of looping being performed. 
